@@ -1,0 +1,17 @@
+apiVersion: skaffold/v1beta6
+kind: Config
+build:
+  artifacts:
+    - image: swift-frontend
+      context: ../swift-client
+      sync:
+        "**/*.js": .
+    - image: swift-backend
+      context: ../swift-server
+      sync:
+        "**/*.js": .
+  local: {}
+deploy:
+  kubectl:
+    manifests:
+      - "./k8s/*"

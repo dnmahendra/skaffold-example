@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: server
+  template:
+    metadata:
+      labels:
+        component: server
+    spec:
+      containers:
+        - name: server
+          image: swift-backend
+          ports:
+            - containerPort: 80
+          env:
+            - name: ES_URL
+              value: elasticsearch-cluster-ip-service
+            - name: ES_PORT
+              value: "9200"

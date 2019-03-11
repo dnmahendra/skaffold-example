@@ -1,0 +1,41 @@
+{
+  "name": "swift-server",
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon --config nodemon.json server.js"
+  },
+  "moduleRoots": [
+    "./src"
+  ],
+  "dependencies": {
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "agentkeepalive": "^4.0.0",
+    "apollo-server": "^2.4.0",
+    "apollo-server-express": "^2.4.0",
+    "body-parser": "^1.18.3",
+    "body-parser-graphql": "^1.1.0",
+    "change-case": "^3.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "elasticsearch": "^15.4.1",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1",
+    "graphql-tools": "^4.0.4",
+    "isomorphic-unfetch": "^3.0.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "nodemon": "^1.18.10"
+  }
+}

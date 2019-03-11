@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "next/babel",
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "displayName": true
+      }
+    ],
+    "@babel/plugin-proposal-class-properties"
+  ]
+}

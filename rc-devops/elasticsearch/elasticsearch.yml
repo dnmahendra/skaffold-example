@@ -1,0 +1,6 @@
+network.host: 0.0.0.0
+script.engine.groovy.inline.update: true
+script.engine.groovy.inline.search: true
+script.engine.groovy.inline.aggs: true
+thread_pool.bulk.queue_size: 2000
+script.max_compilations_per_minute: 100
